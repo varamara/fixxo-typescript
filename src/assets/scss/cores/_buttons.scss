@@ -1,0 +1,126 @@
+.btn-theme {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: $color-theme;
+    color: $color-white;
+    font-weight: $font-weight-medium;
+    padding: 20px 50px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+
+    .corner-left {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+        border-left: 2px solid $color-white;
+        border-top: 2px solid $color-white;
+    }
+    .corner-right {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 17px;
+        left: 223px;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+    }
+
+    &:hover {
+        color: $color-white !important;
+        background-color: $color-dark-1;
+        text-decoration: none;
+    }
+}
+
+.btn-dark {
+    position: absolute;
+    height: 60px;
+    width: 190px;
+    font-size: $font-size-14;    
+    font-weight: $font-weight-medium;
+    color: $color-white;
+    background-color: $color-dark-1;
+    text-align: center;
+    padding: 20px 50px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+
+    .corner-right {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin-top: -10px;
+        margin-left: 111px;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+    }
+    .corner-left {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+        border-left: 2px solid $color-white;
+        border-top: 2px solid $color-white;
+    }
+
+    &:hover {
+        color: $color-dark-1 !important;
+        background-color: $color-white !important;
+
+        .corner-left {
+            border-color: $color-dark-1;
+        }
+        .corner-right {
+            border-color: $color-dark-1;
+        }
+    }
+}
+
+.btn-light {
+    position: absolute;
+    height: 60px;
+    width: 190px;
+    font-size: $font-size-14;    
+    font-weight: $font-weight-medium;
+    color: $color-dark-1;
+    background-color: $color-white;
+    text-align: center;
+    padding: 20px 50px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+
+    .corner-right {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin-top: -10px;
+        margin-left: 111px;
+        border-right: 2px solid $color-dark-1;
+        border-bottom: 2px solid $color-dark-1;
+    }
+    .corner-left {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+        border-left: 2px solid $color-dark-1;
+        border-top: 2px solid $color-dark-1;
+    }
+
+    &:hover {
+        color: $color-white !important;
+        background-color: $color-dark-1 !important;
+
+        .corner-left {
+            border-color: $color-white;
+        }
+        .corner-right {
+            border-color: $color-white;
+        }
+    }
+}

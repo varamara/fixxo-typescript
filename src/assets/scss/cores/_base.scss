@@ -1,0 +1,30 @@
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $font-weight-regular;
+    font-size: 1rem;
+    width: 1920px;
+}
+
+header {
+    background: #E6E6E6;
+    background: linear-gradient(90deg, #E6E6E6 0%, #F5F5F5 100%);
+}
+
+a {
+    font-size: $font-size-16;
+    font-weight: $font-weight-semi-bold;
+    text-decoration: none;
+    color: #23262a;;
+    
+    &:hover {
+        text-decoration: underline;
+        color: #ff7373;  
+    }
+}
+
+.border {
+    color: #ff7373;
+    text-decoration: none;
+}
+

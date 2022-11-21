@@ -1,0 +1,179 @@
+.mainmenu {
+    width: 390px;
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menuicons"
+                         "menulinks menulinks";
+
+    .logo {
+       grid-area: logo;
+       font-size: $font-size-40;
+       font-weight: $font-weight-bold;
+       padding-left: 0.7rem;
+
+        &:hover {
+            color: $color-dark-1;
+            text-decoration: none;
+        }
+    }
+
+    .menu-links {
+        grid-area: menulinks;
+        margin: none;
+        display: none;
+        overflow: hidden;
+        height: 100%;
+        padding-top: 10px;
+
+        .menu-link {
+            font-size: $font-size-15;
+            font-weight: $font-weight-medium;
+            margin: 15px;
+        }
+
+        .active {
+            color: $color-theme;
+            text-decoration: none;
+        }
+    }
+
+    .menu-icons {
+        grid-area: menuicons;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .menu-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white;
+            box-shadow: 0px 0px 10px 0px rgb(201, 201, 201);
+            height: 35px;
+            width: 35px;
+            margin: 0.5rem;
+            border-radius: 50%; 
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-dark-1;
+                text-decoration: none;
+                box-shadow: 0 0 6px 4x $color-shadow;
+            }
+        }
+
+        .hidden {
+            display: none; 
+        }
+        
+        .active {
+            color: $color-theme;
+            text-decoration: none;
+        }
+
+        .btn-menu-icon {
+            border: none;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+
+    .mainmenu {
+        width: 1000px;
+
+        .menu-links {
+
+            .menu-link {
+                position: relative;
+                display: flex;
+                margin-left: 7rem;
+            }
+        }
+        
+        .logo {
+        font-size: $font-size-45;
+        margin-left: 6.5rem;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .mainmenu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: -3.3rem;
+        height: 100px;
+        width: 1920px;
+    
+        .logo {
+            font-size: $font-size-30;
+            font-weight: $font-weight-bold;
+    
+            &:hover {
+                color: $color-dark-1;
+                text-decoration: none;
+            }
+        }
+    
+        .menu-links {
+            position: relative;
+            display: flex;
+            margin-left: 7rem;
+    
+            .menu-link {
+                margin: 1rem;
+                font-size: $font-size-16;
+    
+            }
+
+            .active {
+                color: $color-theme;
+                text-decoration: none;
+            }
+        }
+    
+        .menu-icons {
+            display: flex;
+    
+            .menu-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-white;
+                box-shadow: 0px 0px 10px 0px rgb(201, 201, 201);
+                height: 35px;
+                width: 35px;
+                margin: 0.5rem;
+                border-radius: 50%; 
+                transition: all 0.1s ease-in-out;
+    
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-dark-1;
+                    text-decoration: none;
+                    box-shadow: 0 0 6px 4x $color-shadow;
+                }
+            }
+    
+            .active {
+                color: $color-white;
+                background-color: $color-dark-1;
+                text-decoration: none;
+                box-shadow: 0 0 6px 4x $color-shadow;
+            }
+    
+            span {
+                margin-left: 50px;
+                margin-bottom: 10px;
+            }
+
+            .btn-menu-icon {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+$color-theme: #ff7373;
+$color-white: #ffffff;
+$color-gray-1: #f8f8f8; 
+$color-gray-2: #e6e6e6;
+$color-gray-3: #bbbbbb;
+$color-gray-4: #616365;
+$color-dark-1: #313438;
+$color-dark-2: #303337;
+$background-gray: #EAEAEA;
+$color-shadow: rgba(0, 0, 0, 0.06);
+
+
+// $color-dark-3: #23262a;
+
+.bg-theme {
+    background-color: $color-theme;
+}
+
+.bg-dark {
+    background-color: $color-dark-1 !important;
+}
