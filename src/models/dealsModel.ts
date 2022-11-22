@@ -1,4 +1,4 @@
-export interface Deals {
+export interface deals {
   
     articleNumber: string
     name: string

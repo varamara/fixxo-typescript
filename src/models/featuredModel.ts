@@ -1,4 +1,4 @@
-export interface Featured {
+export interface featured {
   
     articleNumber: string
     name: string

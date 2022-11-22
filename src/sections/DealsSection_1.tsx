@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
 import { items } from '../models/itemsModel';
+import { product } from '../models/productModel';
 
 export interface DealsSectionProps {
     items: items[]
@@ -23,9 +24,9 @@ const DealsSection_1: React.FC<DealsSectionProps>= ({ items = []} ) => {
       <div className="flash-grid">
         <div className="container">
           <div className="row row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-2 g-2">
-            {/* {
+            {
               items.map( product => <ProductCard key={product.articleNumber} item={product} />)
-            } */}
+            }
           </div>
         </div>
       </div>

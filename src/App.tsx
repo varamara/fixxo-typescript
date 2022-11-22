@@ -6,6 +6,15 @@ import TodoProvider from './contexts/TodoContext';
 import HomeView from './views/HomeView';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ProductsContext } from './contexts/contexts';
+import CategoriesView from './views/CategoriesView';
+import ProductsView from './views/ProductsView';
+import ProductDetailsView from './views/ProductDetailsView';
+import ContactsView from './views/ContactsView';
+import SearchView from './views/SearchView';
+import CompareView from './views/CompareView';
+import WishlistView from './views/WishlistView';
+import ShoppingcartView from './views/ShoppingCartView';
+import NotFoundView from './views/NotFoundView';
 
 
 
@@ -39,13 +48,21 @@ const App: React.FC = () => {
   
   return (
     <BrowserRouter>
-      <ProductsContext.Provider value={{products, featured, deals}}>
-        <Routes>
-          <Route path="/" element={<HomeView />} />
-    
-        </Routes>
-      </ProductsContext.Provider>
-    </BrowserRouter>
+    <ProductsContext.Provider value={{products, featured, deals}}>
+      <Routes>
+        <Route path="/" element={<HomeView />} />
+        <Route path="/categories" element={<CategoriesView />} />
+        <Route path="/products" element={<ProductsView />} />
+        <Route path="/products/:name" element={<ProductDetailsView />} />
+        <Route path="/contacts" element={<ContactsView />} />
+        <Route path="/search" element={<SearchView />} />
+        <Route path="/compare" element={<CompareView />} />
+        <Route path="/wishlist" element={<WishlistView />} />
+        <Route path="/shoppingcart" element={<ShoppingcartView />} />
+        <Route path="*" element={<NotFoundView />} />
+      </Routes>
+    </ProductsContext.Provider>
+  </BrowserRouter>
   );
 }
 

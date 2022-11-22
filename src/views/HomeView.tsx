@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../contexts/contexts'
+import { featured } from '../models/featuredModel'
+import { deals } from '../models/dealsModel'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 import DealsSection_1 from '../sections/DealsSection_1'
 import DealsSection_2 from '../sections/DealsSection_2'
@@ -10,16 +12,15 @@ import ShowcaseSection from '../sections/ShowcaseSection'
 import SupportSection from '../sections/SupportSection'
 import TopPicksSection from '../sections/TopPicksSection'
 
+
 interface HomeViewProps {
-  featured: string
-  deals: string
+  featured?: string
+  deals?: string
 }
 
 const HomeView: React.FC<HomeViewProps>= () => {
 
  document.title = 'Fixxo.'
-
- const {featured, deals} = useContext(ProductsContext)
 
   return (
     <>

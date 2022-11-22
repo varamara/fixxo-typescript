@@ -2,11 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export interface ProductCardProps {
-    item: string
-    addToWishList: (e: React.ChangeEvent) => void
-    addToCompare: (e: React.ChangeEvent) => void
-    addToCart: (e: React.ChangeEvent) => void
-    onClick: (React.MouseEventHandler<HTMLButtonElement>);
+    item: any
+    // onClick: (React.MouseEventHandler<HTMLButtonElement>);
 }
 
 const ProductCard: React.FC <ProductCardProps> = ({item}) => {
